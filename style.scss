@@ -12,13 +12,14 @@ h6 {
     font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
+.complete-header {
+    background: linear-gradient(180deg, #41372d 0%, #beab91 100%);
+}
 .navbar {
-    background: #1e3e26;
     padding-top: 1.5rem;
 }
 header.masthead {
     position: relative;
-    background: linear-gradient(180deg, rgba(30, 62, 38, 1) 0%, #72a27e 100%);
     background-size: cover;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -33,12 +34,12 @@ header.masthead .overlay {
     opacity: 0.3;
 }
 header.masthead h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 @media (min-width: 768px) {
     header.masthead {
-        padding-top: 5rem;
-        padding-bottom: 6rem;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
     }
     header.masthead h1 {
         font-size: 3rem;
@@ -46,6 +47,9 @@ header.masthead h1 {
     .features-icons {
         padding-top: 7rem;
         padding-bottom: 7rem;
+    }
+    .got-any-questions {
+        text-align: right;
     }
 }
 .showcase .showcase-text {
@@ -64,10 +68,10 @@ header.masthead h1 {
         padding-top: 7rem;
         padding-bottom: 7rem;
     }
-    .call-to-action {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
-    }
+    // .call-to-action {
+    //     padding-top: 7rem;
+    //     padding-bottom: 7rem;
+    // }
 }
 .features-icons {
     padding-top: 3rem;
@@ -97,19 +101,10 @@ header.masthead h1 {
 }
 .call-to-action {
     position: relative;
-    background-color: darken($primary, 20%);
+    background-color: #41372d;
     background-size: cover;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-.call-to-action .overlay {
-    position: absolute;
-    background-color: #212529;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
+    // padding-top: 3rem;
+    // padding-bottom: 3rem;
 }
 footer.footer {
     padding-top: 4rem;
@@ -124,10 +119,15 @@ footer.footer {
     color: $primary !important;
 }
 .btn-primary {
-    background: $primary !important;
-    border-color: darken($color: $primary, $amount: 5%);
+    background: #443f3a !important;
+    border-color: darken($color: #443f3a, $amount: 5%);
     
     &:hover, &:active {
-        border-color: darken($color: $primary, $amount: 10%);
+        border-color: darken($color: #443f3a, $amount: 10%);
     }
+}
+
+.btn-secondary {
+    background: #88854e;
+    border-color: darken($color: #88854e, $amount: 5%);
 }
